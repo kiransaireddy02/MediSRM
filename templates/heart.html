@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="eye">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Care | MediCare</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <style>
+        form {
+            background-image: url("../static/heart/heart.jpg");
+        }
+        mark {
+            background-color: #86929E;
+            color:#FFFFFF;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <header class="navbar eye">
+            <div class="logo">
+                <img src="../static/logo.png" alt="MediCare Logo">
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="index.html#services">Services</a>
+            </div>
+        </header>
+
+        <form action='resulth' class='main-form needs-validation' method="POST">
+            <br><br>
+            <div class="row">
+                <div class="col">
+                    <div class='form-group'>
+                        <label for="firstname"><mark>Firstname</mark></label>
+                        <input type="text" name="firstname" id="firstname" class="form-control" required='True'>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class='form-group'>
+                        <label for="lastname"><mark>Lastname</mark></label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" required='True'>
+                    </div>
+                </div>
+            </div>
+    
+            <div class='form-group'>
+                <label for="phone"><mark>Phone No.</mark></label>
+                <input type="number" name="phone" id="phone" class="form-control" required='True'>
+                <small class='form-text ' style='color: #FFFFFF;'>* Include your area code</small>
+            </div>
+    
+            <div class="row">
+                <div class="col">
+                    <div class='form-group'>
+                        <label for="email"><mark>Email</mark></label>
+                        <input type="email" name="email" id="email" class="form-control" required='True'>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="gender"><mark>Gender</mark></label>
+                        <select name="gender" id="gender" class="form-control" required='True'>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <div class='row'>
+    
+                <div class="col">
+                    <label for="op"><mark>Old Peak</mark></label>
+                    <input type="number" step='any' required='True' name='op' id='op' class='form-control'>
+                </div>
+    
+                <div class="col">
+                    <label for="mhra"><mark>Max. Heart Rate achieved</mark></label>
+                    <input type='number' step="any" required='True' name='mhra' id='mhra' class='form-control'>
+                </div>
+
+                <div class="col">
+                    <label for="eia"><mark>Exercise induces angina</mark></label>
+                    <select required='True' name='eia' id='eia' class='form-control'>
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class='row'>
+                <div class="col-12">
+                    <label for="nmv"><mark>No. of major vessels</mark></label>
+                    <select required='True' name='nmv' id='nmv' class='form-control'>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="tcp"><mark>Type of Chest Pain</mark></label>
+                    <select  required='True' name='tcp' id='tcp' class='form-control'>
+                        <option value="0">typical angina</option>
+                        <option value="1">atypical angina</option>
+                        <option value="2">non-anginal pain</option>
+                        <option value="3">asymptomatic</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="age"><mark>Age</mark></label>
+                    <input type="number" name="age" id="age" class="form-control" required='True'>
+                </div>
+    
+                <div class="col">
+                    <label for="thal"><mark>Thal</mark></label>
+                    <select required='True' name='thal' id='thal' class='form-control'>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class='text-center'>
+                <button type='submit' class='btn btn-outline-success' style='width:700px;margin-top: 30px;'> Submit
+                </button>
+            </div>
+    
+    
+    
+        </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+        <footer class="footer eye">
+            <p>© 2024 MediSRM. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
